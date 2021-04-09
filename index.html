@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Calculator</title>
+	</head>
+	<body>
+		<main class="calculator">
+			<div class="displayNumber">
+				<div class="previousNumber"></div>
+				<div class="currentNumber"></div>
+			</div>
+			<span class="all-clear">AC</span>
+			<span class="clear">C</span>
+			<span class="key">%</span>
+			<span class="key">/</span>
+			<span class="key">7</span>
+			<span class="key">8</span>
+			<span class="key">9</span>
+			<span class="key">*</span>
+			<span class="key">4</span>
+			<span class="key">5</span>
+			<span class="key">6</span>
+			<span class="key">-</span>
+			<span class="key">1</span>
+			<span class="key">2</span>
+			<span class="key">3</span>
+			<span class="key">+</span>
+			<span class="key zero">0</span>
+			<span class="key">.</span>
+			<span class="evaluation">=</span>
+		</main>
+		<script src="main.js"></script>
+
+		<!-- effect -->
+		<script type="text/javascript" src="./glassmorphism/vanilla-tilt.js"></script>
+		<script type="text/javascript">
+			VanillaTilt.init(document.querySelector('.calculator'), {
+				max: 15,
+				speed: 400,
+				glare: true,
+				'max-glare': 0.2,
+			});
+		</script>
+	</body>
+</html>
